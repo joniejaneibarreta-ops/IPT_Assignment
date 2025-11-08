@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1013240658845",
+    "project_id": "ipt-auth-3a561",
+    "storage_bucket": "ipt-auth-3a561.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013240658845:android:f1d002d8639ef7c922cd74",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMcYBPc-RGJxSjo6NI2syPS0WD22bOXeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
