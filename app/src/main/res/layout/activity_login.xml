@@ -64,11 +64,12 @@
         android:text="Log In" />
 
     <TextView
-        android:id="@+id/tvSignup"
+        android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Don’t have an account? Sign Up"
         android:textColor="@android:color/white"
-        android:layout_marginTop="50dp"/>
+        android:textSize="14sp" />
 
 </LinearLayout>

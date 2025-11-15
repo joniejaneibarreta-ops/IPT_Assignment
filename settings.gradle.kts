@@ -19,6 +19,11 @@ dependencyResolutionManagement {
     }
 }
 
+//plugins {
+//    // Required for Firebase Google Services
+//    id("com.google.gms.google-services") version "4.4.1" apply false
+//}
+
 rootProject.name = "My Application"
 include(":app")
  
