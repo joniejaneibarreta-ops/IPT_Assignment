@@ -6,12 +6,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
 public class LoginActivity extends AppCompatActivity {
+
     private EditText editTextEmail, editTextPassword;
     private Button buttonLogin;
     private TextView textViewRegister;
@@ -29,9 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin = findViewById(R.id.button);
         textViewRegister = findViewById(R.id.textViewRegister);
 
-        Button btnLogin = findViewById(R.id.button);
-
+        // Login button
         buttonLogin.setOnClickListener(v -> loginUser());
+
+        // Go to Register page
         textViewRegister.setOnClickListener(v ->
                 startActivity(new Intent(LoginActivity.this, Register.class))
         );
@@ -49,10 +52,15 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
+
                         FirebaseUser user = mAuth.getCurrentUser();
+
                         Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(this, Dashboard.class));
+
+                        // Launch dashboard
+                        startActivity(new Intent(this, DashboardActivity.class));
                         finish();
+
                     } else {
                         Toast.makeText(this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
