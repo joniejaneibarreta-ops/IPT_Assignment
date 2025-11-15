@@ -34,9 +34,9 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void logoutUser() {
-        FirebaseAuth.getInstance().signOut(); // 🔥 Logs the user out
+        FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
         startActivity(intent);
-        finish(); // Prevents going back to dashboard
+        finish();
     }
 }

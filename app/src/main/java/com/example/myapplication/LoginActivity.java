@@ -31,10 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin = findViewById(R.id.button);
         textViewRegister = findViewById(R.id.textViewRegister);
 
-        // Login button
         buttonLogin.setOnClickListener(v -> loginUser());
 
-        // Go to Register page
         textViewRegister.setOnClickListener(v ->
                 startActivity(new Intent(LoginActivity.this, Register.class))
         );
